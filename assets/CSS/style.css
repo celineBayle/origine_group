@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -199,9 +200,11 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+
   .navbar-link {
     font-size: 1.2rem;
   }
+
   .hero-advance {
     display: flex;
     justify-content: space-around;
@@ -209,33 +212,40 @@ footer {
     width: 50%;
     text-align: center;
   }
+
   .hero-year {
     font-size: 3rem;
     -webkit-text-stroke-width: 3px;
     margin: 1rem;
   }
+
   .star-left,
   .star-right {
     width: 4rem;
     height: auto;
     margin: 1rem;
   }
+
   .hero-title--origine {
     font-size: 8rem;
   }
+
   .hero-title--group {
     font-size: 8.5rem;
     top: -6rem;
   }
+
   .hero-subtitle {
     font-size: 0.9rem;
     padding: 0.7rem 4rem;
     top: -6.9rem;
   }
+
   .wide-star {
     width: 5rem;
     top: -6rem;
   }
+  
   .text {
     font-size: 0.7rem;
     top: -6rem;
@@ -243,11 +253,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .close {
-    display: inline-block;
-    cursor: pointer;
-    z-index: 3;
-  }
+  
   .navbar {
     position: absolute;
     top: 0.75em;
@@ -273,6 +279,7 @@ footer {
     color: #000;
     padding-top: 1rem;
   }
+
   .hero-advance {
     display: flex;
     justify-content: space-around;
@@ -281,22 +288,27 @@ footer {
     max-width: 300px;
     text-align: center;
   }
+
   .hero-title--origine {
     font-size: 5rem;
   }
+
   .hero-title--group {
     font-size: 5.5rem;
     top: -6rem;
   }
+
   .hero-subtitle {
     font-size: 0.7rem;
     padding: 0.7rem 2rem;
     top: -6.9rem;
   }
+
   .wide-star {
     width: 5rem;
     top: -6rem;
   }
+
   .text {
     width: 300px;
     font-size: 1rem;
