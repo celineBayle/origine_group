@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +17,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+label {
+  display: none;
 }
 
 .container {
@@ -199,8 +202,12 @@ footer {
   color: #fff;
 }
 
-@media screen and (max-width: 1024px) {
+#check {
+  z-index: 3;
+  display: none;
+}
 
+@media screen and (max-width: 1024px) {
   .navbar-link {
     font-size: 1.2rem;
   }
@@ -245,7 +252,7 @@ footer {
     width: 5rem;
     top: -6rem;
   }
-  
+
   .text {
     font-size: 0.7rem;
     top: -6rem;
@@ -253,38 +260,74 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  
   .navbar {
-    position: absolute;
-    top: 0.75em;
-    right: 1rem;
-    height: 60vh;
-    width: 100vw;
-    min-width: 300px;
-    background-color: #fff;
+    display: none;
+  }
+
+  label {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+  }
+
+  label:hover {
+    color: #ccc;
+  }
+
+  label .close-btn {
+    display: none;
+  }
+
+  #check:checked ~ header .navbar {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+  }
+
+  #check:checked ~ header .navbar .navbar-list {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #check:checked ~ header .navbar .navbar-list .navbar-link {
+    color: #222;
+    font-weight: 700;
+    margin: 50px;
+    letter-spacing: 2px;
+  }
+
+  #check:checked ~ header label .close-btn {
+    color: #000;
+    position: fixed;
+    display: block;
     z-index: 2;
   }
 
-  .navbar-list {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  #check:checked ~ header label .menu-btn {
+    display: none;
   }
 
-  .navbar-link {
-    color: #000;
-    padding-top: 1rem;
+  label .menu-btn {
+    position: absolute;
   }
 
   .hero-advance {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
     max-width: 300px;
     text-align: center;
   }
