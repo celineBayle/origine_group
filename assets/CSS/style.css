@@ -6,14 +6,13 @@
   text-decoration: none;
 }
 
-body {  
+body {
   color: #fff;
   background-color: #222;
   width: 100%;
-  margin: auto; 
-  width: 1700px;
-  height: auto;
-  
+  margin: auto;
+  max-width: 3576px;
+  max-height: 2383px;
 }
 
 label {
@@ -21,10 +20,10 @@ label {
 }
 
 .container {
-  background-image: url('/assets/img/texture.jpg');  
+  background-image: url('/assets/img/texture.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -58,17 +57,16 @@ label {
 }
 
 .hero {
-  border:1px solid violet;
-  line-height:0.8;
-  padding: 4rem;
+  width: 50%;
+  object-fit: contain;
+  line-height: 0.85;
+  padding-top: 5rem;
   display: grid;
   justify-content: center;
   align-content: center;
 }
 
 .hero-advance {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,11 +91,10 @@ label {
   font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
   letter-spacing: -10px;
-  font-size: 5em;
+  font-size: 5.1em;
   font-weight: bold;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
-  
 }
 
 .hero-title--group {
@@ -105,10 +102,9 @@ label {
   font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 5.5em;
+  font-size: 5.6em;
   font-weight: bold;
   text-align: center;
-  
 }
 
 .hero-subtitle {
@@ -119,9 +115,9 @@ label {
   text-align: center;
   text-transform: uppercase;
   padding: 0.7rem 3rem;
+  margin-top: 0.5rem;
   border: 1px solid white;
   border-radius: 50px;
-  
 }
 
 .star-left,
@@ -133,7 +129,7 @@ label {
 .wide-star {
   width: 7rem;
   height: auto;
-  margin:10px auto;
+  margin: 20px auto;
 }
 
 .text {
@@ -143,8 +139,8 @@ label {
   font-family: 'Roboto', sans-serif;
   color: #ddd;
   text-transform: uppercase;
-  font-size: 1rem;  
-  line-height: 3;
+  font-size: 1rem;
+  line-height: 2;
 }
 
 footer {
@@ -208,14 +204,6 @@ footer {
     font-size: 1.2rem;
   }
 
-  .hero-advance {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    text-align: center;
-  }
-
   .hero-year {
     font-size: 3rem;
     -webkit-text-stroke-width: 3px;
@@ -235,27 +223,31 @@ footer {
 
   .hero-title--group {
     font-size: 8.5rem;
-    top: -6rem;
   }
 
   .hero-subtitle {
     font-size: 0.9rem;
     padding: 0.7rem 4rem;
-    top: -6.9rem;
   }
 
   .wide-star {
     width: 5rem;
-    top: -6rem;
   }
 
-  .text {
-    font-size: 0.7rem;
-    top: -6rem;
+  .text p {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border: 1px solid green;
   }
 }
 
-@media screen and (max-width: 768px) {  
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .navbar {
     display: none;
   }
@@ -319,39 +311,56 @@ footer {
   label .menu-btn {
     position: absolute;
   }
+  .hero {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .hero-advance {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 300px;
-    text-align: center;
+    font-size: 0.5rem;
+  }
+
+  .hero-year {
+    font-size: 2rem;
+    -webkit-text-stroke-width: 1px;
+    margin: 0.2rem;
+    letter-spacing: 1px;
+  }
+
+  .star-left,
+  .star-right {
+    width: 3rem;
+    height: auto;
+    margin: 0.5rem;
   }
 
   .hero-title--origine {
-    font-size: 5rem;
+    font-size: 3.6rem;
+    margin: auto;
+    letter-spacing: 0;
   }
 
   .hero-title--group {
-    font-size: 5.5rem;
-    top: -6rem;
+    font-size: 4rem;
+    letter-spacing: 5px;
   }
 
   .hero-subtitle {
-    font-size: 0.7rem;
-    padding: 0.7rem 2rem;
-    top: -6.9rem;
+    font-size: 0.5rem;
+    padding: 0.4rem 1.4rem;
   }
 
   .wide-star {
     width: 5rem;
-    top: -6rem;
   }
 
-  .text {
-    width: 300px;
-    font-size: 1rem;
-    top: -6rem;
+  .text p {
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
   }
 
   footer {
