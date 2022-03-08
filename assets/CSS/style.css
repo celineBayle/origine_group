@@ -8,11 +8,12 @@
 
 body {  
   color: #fff;
+  background-color: #222;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin: auto; 
+  width: 1700px;
+  height: auto;
+  
 }
 
 label {
@@ -20,11 +21,11 @@ label {
 }
 
 .container {
-  background-image: url('/assets/img/texture.jpg');
+  background-image: url('/assets/img/texture.jpg');  
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
-  padding-top: 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,15 +58,16 @@ label {
 }
 
 .hero {
-  margin: auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border:1px solid violet;
+  line-height:0.8;
+  padding: 4rem;
+  display: grid;
   justify-content: center;
+  align-content: center;
 }
 
 .hero-advance {
-  width: 90%;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -95,8 +97,7 @@ label {
   font-weight: bold;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
-  position: relative;
-  top: -3rem;
+  
 }
 
 .hero-title--group {
@@ -104,11 +105,10 @@ label {
   font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 5.45em;
+  font-size: 5.5em;
   font-weight: bold;
   text-align: center;
-  position: relative;
-  top: -8.8rem;
+  
 }
 
 .hero-subtitle {
@@ -121,21 +121,19 @@ label {
   padding: 0.7rem 3rem;
   border: 1px solid white;
   border-radius: 50px;
-  position: relative;
-  top: -10.7rem;
+  
 }
 
 .star-left,
 .star-right {
-  width: 6rem;
+  width: 5.8rem;
   height: auto;
 }
 
 .wide-star {
   width: 7rem;
   height: auto;
-  position: relative;
-  top: -9.4rem;
+  margin:10px auto;
 }
 
 .text {
@@ -145,9 +143,7 @@ label {
   font-family: 'Roboto', sans-serif;
   color: #ddd;
   text-transform: uppercase;
-  font-size: 1rem;
-  position: relative;
-  top: -8.2rem;
+  font-size: 1rem;  
   line-height: 3;
 }
 
